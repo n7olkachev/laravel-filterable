@@ -1,0 +1,46 @@
+{
+  "name": "n7olkachev/laravel-filterable",
+  "description": "Nice and simple scope for your models",
+  "homepage": "https://github.com/n7olkachev/laravel-filterable",
+  "keywords":
+  [
+    "websecret",
+    "scopes",
+    "filterable",
+    "eloquent",
+    "laravel"
+  ],
+  "authors": [
+    {
+      "name": "Nikita Tolkachev",
+      "email": "n7olkachev@gmail.com",
+      "homepage": "https://n7olkachev.github.io",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php" : "^7.0",
+    "illuminate/config": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
+    "illuminate/database": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
+    "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "orchestra/testbench": "~3.3.0|~3.4.0",
+    "orchestra/database": "~3.3.0|~3.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "N7olkachev\\LaravelFilterable\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "N7olkachev\\LaravelFilterable\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "license": "MIT"
+}
