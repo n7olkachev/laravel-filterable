@@ -21,8 +21,8 @@ Page::filter($request->all())->get()
 ```
 
 By default, you get equality filters (`where field = bar`) 
-and when you need to support other queries, adding scope will 
-do the trick. See examples for better understanding.
+and when you need to support other queries, adding new scopes 
+will do the trick, without changing anything except model. See examples for better understanding.
 
 ## Examples
 
