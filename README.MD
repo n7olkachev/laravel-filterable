@@ -4,7 +4,6 @@
 <a href="https://websecret.by"><img src="https://websecret.by/images/logo-github.png" /></a>
 </p>
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/n7olkachev/laravel-filterable.svg?style=flat-square)](https://packagist.org/packages/n7olkachev/laravel-filterable)
 [![Licence](https://img.shields.io/packagist/l/n7olkachev/laravel-filterable.svg?style=flat-square)](https://packagist.org/packages/n7olkachev/laravel-filterable)
 [![Build Status](https://travis-ci.org/n7olkachev/laravel-filterable.svg?branch=master)](https://travis-ci.org/n7olkachev/laravel-filterable)
 
