@@ -36,6 +36,11 @@ class Page extends Model
         'status',
         'created_at',
     ];
+    
+    protected $filterable = [
+        'title',
+        'created_after'
+    ];
 
     public function scopeCreatedAfter($query, $time)
     {
