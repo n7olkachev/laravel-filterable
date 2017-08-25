@@ -3,6 +3,7 @@
 namespace N7olkachev\LaravelFilterable\Test;
 
 use Carbon\Carbon;
+use N7olkachev\LaravelFilterable\Exceptions\FilterableException;
 use N7olkachev\LaravelFilterable\Test\Models\Page;
 
 class FilterableTest extends TestCase
@@ -44,5 +45,12 @@ class FilterableTest extends TestCase
         $this->assertEquals($pages->count(), 2);
         $pages = Page::filter(['title' => ['Third page']])->get();
         $this->assertEquals($pages->count(), 0);
+    }
+
+    /** @test */
+    public function it_throws_on_not_allowed_field()
+    {
+        $this->expectException(FilterableException::class);
+        Page::filter(['foobar' => 'foo']);
     }
 }

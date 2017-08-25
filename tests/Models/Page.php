@@ -14,6 +14,11 @@ class Page extends Model
         'created_at',
     ];
 
+    protected $filterable = [
+        'title',
+        'created_after'
+    ];
+
     public function scopeCreatedAfter($query, $time)
     {
         return $query->where('created_at', '>', $time);
