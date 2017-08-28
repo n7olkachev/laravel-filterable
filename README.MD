@@ -74,10 +74,12 @@ You can install the package via composer:
 composer require n7olkachev/laravel-filterable
 ```
 
-Next, add Filterable trait to your models:
+Next, add Filterable trait and list all filterable properties:
 
 ```php
 use Filterable;
+
+protected $filterable = ['created_at', 'title'];
 ```
 
 That's all!
